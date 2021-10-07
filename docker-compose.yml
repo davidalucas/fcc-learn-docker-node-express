@@ -10,3 +10,14 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
+
+  mongo:
+    image: mongo:latest
+    volumes:
+      - mongo-db:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=davidalucas
+      - MONGO_INITDB_ROOT_PASSWORD=secretpassword
+
+volumes:
+  mongo-db:

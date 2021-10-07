@@ -8,7 +8,7 @@ ARG NODE_ENV
 RUN if [ "${NODE_ENV}" = "development" ]; \ 
     then yarn install; \ 
     else yarn install --production=true; \ 
-    fi
+    fi;
 
 COPY . .
 
