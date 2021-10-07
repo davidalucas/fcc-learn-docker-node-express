@@ -21,5 +21,8 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=davidalucas
       - MONGO_INITDB_ROOT_PASSWORD=secretpassword
 
+  redis:
+    image: redis:latest
+
 volumes:
   mongo-db:

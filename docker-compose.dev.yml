@@ -9,6 +9,7 @@ services:
       - NODE_ENV=development
       - MONGO_USER=davidalucas
       - MONGO_PASSWORD=secretpassword
+      - SESSION_SECRET=secretForSession
     command: npm run dev
 
   mongo:
